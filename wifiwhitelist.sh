@@ -4,9 +4,9 @@
 ####################################################################################################################################
 # Variables set here################################################################################################################ 
 CONNECTEDWIFI=$(/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I | awk -F': ' '/ SSID/ {print $2}')
-WIFI1="pcamp"
-WIFI2="HAPOALIM"
-logfile="/Library/poalim/wifilog.log"
+WIFI1="SSID_GOES_HERE"
+WIFI2="SSID_GOES_HERE"
+logfile="/Library/companyname/wifilog.log"
 maxsize=30
 actualsize=$(du -k "$logfile" | cut -f 1)
 idate=`date "+%H:%M:%S  %d/%m/%y"`
