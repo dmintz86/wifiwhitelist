@@ -17,6 +17,18 @@ TOUCH='/usr/bin/touch'
 ###################################################################################################################################
 #DO NOT EDIT BELOW THIS LINE
 ###################################################################################################################################
+#Checks if log file directory exists and if not creates it. 
+
+if
+[ -d "/Library/poalim/" ]
+then 
+	echo "directory exists"
+	
+else 
+	mkdir /Library/companyname
+	
+fi	
+
 #makes a log file to write progress to
 ${TOUCH} "$logfile"
 
